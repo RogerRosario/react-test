@@ -15,8 +15,6 @@ y abrir el puerto número 3000 de la siguiente manera:
 
 
 
-Aquí aprovecho para decir que no pude encontrar la manera de mostrar los productos en el 
-servicio de JsonPlaceHolder.
 
 
 
