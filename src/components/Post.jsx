@@ -1,5 +1,4 @@
 import React from 'react'
-import './post.css'
 
 const Post = ({id, title, body}) => {
     return (
@@ -9,7 +8,7 @@ const Post = ({id, title, body}) => {
             </div>
 
             <div className="card-body">
-                <span><strong>Cuerpo: </strong> {body}</span>
+                <span><strong>Cuerpo: </strong> {body} </span>
             </div>
         </div>
     )

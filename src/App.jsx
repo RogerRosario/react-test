@@ -54,25 +54,25 @@ function App() {
   return (
     <Fragment>
       <div className="container">
-      <div className="row">
-        <div className="col m-4">
-          <h4>Nuevo Artículo</h4>
-          <input ref={articuloRef} type="text" placeholder='Nuevo Artículo'></input>
-          <button onClick={Nuevo}>Agregar</button>
-          <button onClick={Borrar}>Eliminar</button>
-        </div>
-        <ArticuloList articulos={articulos} selectedProd={selectedProd}/>
-    
-
-        <div className="col m-5">
-          <h4 className='m-3'>Fake data obtenida del JsonPlaceHolder</h4>
-            {
-            posts.map((post) => (
-              <Post id={post.id} key={post.id} title={post.title} body={post.body} />
-              ))
-          }
-        </div>
-        </div>
+        <div className="row">
+          <div className="col m-4">
+            <h4>Nuevo Artículo</h4>
+            <input ref={articuloRef} type="text" placeholder='Nuevo Artículo'></input>
+            <button onClick={Nuevo}>Agregar</button>
+            <button onClick={Borrar}>Eliminar</button>
+          </div>
+          <ArticuloList articulos={articulos} selectedProd={selectedProd}/>
+      
+          {/* JsonPlaceHolder */}
+          <div className="col m-5">
+            <h4 className='m-3'>Fake data obtenida del JsonPlaceHolder</h4>
+              {
+              posts.map((post) => (
+                <Post id={post.id} key={post.id} title={post.title} body={post.body} />
+                ))
+            }
+          </div>
+          </div>
         </div>
     </Fragment>
   );

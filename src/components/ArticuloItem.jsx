@@ -9,7 +9,6 @@ export function ArticuloItem ({articulo, selectedProd}) {
     }
 
     return(
-
         <li className="list-group-item col-3">
             <input type="checkbox" checked={selected} onChange={completedClick}/>
             {producto}
